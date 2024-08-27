@@ -18,10 +18,10 @@ model = models.Sequential([
     layers.Conv2D(64, (3, 3), activation='relu', strides=(1, 1), padding='same'),
     layers.MaxPooling2D((2, 2)),
     
-    layers.Conv2D(128, (3, 3), activation='relu', strides=(1, 1), padding='same'),
+    layers.Conv2D(128, (3, 3), activation='relu', strides=(1, 1), padding='valid'),
     layers.MaxPooling2D((2, 2)),
     
-    layers.Conv2D(256, (2, 2), activation='relu', strides=(1, 1), padding='same'),
+    layers.Conv2D(256, (2, 2), activation='relu', strides=(1, 1), padding='valid'),
     layers.Flatten(),
     
     layers.Dense(256, activation='relu'),
