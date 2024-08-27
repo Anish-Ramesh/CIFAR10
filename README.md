@@ -1,4 +1,5 @@
-#CIFAR-10 Image Classification Model
+# CIFAR-10 Image Classification Model
+
 This repository contains a Convolutional Neural Network (CNN) model built using TensorFlow/Keras for classifying images from the CIFAR-10 dataset. The CIFAR-10 dataset is a popular benchmark dataset in computer vision, consisting of 60,000 32x32 color images in 10 different classes, with 6,000 images per class.
 
 #Project Overview
