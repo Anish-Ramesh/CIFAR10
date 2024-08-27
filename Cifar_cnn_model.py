@@ -4,13 +4,15 @@ import numpy as np
 
 
 (x_train, y_train), (x_test, y_test) = cifar10.load_data()
-x_train, x_test = x_train / 255.0, x_test / 255.0  # Normalize pixel values
+x_train, x_test = x_train / 255.0, x_test / 255.0  
 
 
-class_names = [
+class_names = 
+[
     'airplane', 'automobile', 'bird', 'cat', 'deer', 
     'dog', 'frog', 'horse', 'ship', 'truck'
 ]
+
 model = models.Sequential([
     layers.Conv2D(32, (3, 3), activation='relu', strides=(1, 1), padding='same', input_shape=(32, 32, 3)),
     layers.MaxPooling2D((2, 2)),
